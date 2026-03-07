@@ -1,16 +1,57 @@
 import React from 'react'
-import '../CSS/upload.css'
+import '../CSS/Footer.css'
 const FooterCard = () => {
   return (
-    <div><div style={{
-          borderTop: "1px solid rgba(255,255,255,0.05)",
-          padding: "24px",
-          textAlign: "center",
-          color: "rgba(255,255,255,0.2)",
-          fontSize: 13,
-        }}>
-          FileForge · Django backend at All processing done server-side
-        </div></div>
+     <div className='footer_header'>
+    <div className='footer'>
+      <div className='footer-item'>
+        <div className='item-1'>Terms & Conditions</div>
+        <div className='item-1'>Privacy Policy</div>
+        <div className='item-1'>Contact Us</div>
+      </div>
+      <div className='footer-item'>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100020495491917" target="_blank" rel="noopener noreferrer">
+            <img src="../../Images/Facebook.jpeg" alt="Facebook" className='footer-image' />
+             </a>
+         
+        </div>
+        <div>
+            <a href="https://www.instagram.com/mizanuranr/?hl=en" target="_blank" rel="noopener noreferrer">
+            <img src="../../Images/instragram.jpeg" alt="Instagram"className='footer-image' />
+            </a>
+         
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/mizanur-rahman-66b806248/" target="_blank" rel="noopener noreferrer">
+            <img src="../../Images/linkedin.jpeg" alt="LinkedIn" className='footer-image'/>
+            </a>
+          
+        </div>
+        <div>
+            {/* <a href="https://www.facebook.com/profile.php?id=100020495491917" target="_blank" rel="noopener noreferrer"> */}
+            <img src="../../Images/twitter.jpeg" alt="twiter" className='footer-image'/>
+            {/* </a> */}
+          
+        </div>
+        <div>
+          <a href="https://t.me/mizanuranr" target="_blank" rel="noopener noreferrer">
+          <img src="../../Images/telegram.jpeg" alt="telegram" className='footer-image'/>
+          </a>
+        </div>
+        <div>
+            <a href="mailto:whitedevil1jdk@gmail.com" target="_blank" rel="noopener noreferrer">
+            <img src="../../Images/email.jpeg" alt="email" className='footer-image'/>
+            </a>
+          
+        </div>
+      </div>
+
+    </div>
+    <div className='copyright'>
+      <p>&copy; 2026 Mizan.in</p>
+    </div>
+    </div>
   )
 }
 

@@ -296,3 +296,12 @@
   /* border: 2px solid red; */
   font-size: 30px;
 }
+
+
+.cont-footer-adjust{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px solid orange; */
+    min-height: 100vh;
+}

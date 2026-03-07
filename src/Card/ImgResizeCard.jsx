@@ -6,6 +6,11 @@ const ImgResizeCard = () => {
     const [error, setError] = useState("");
     const [converToPdfbutton, setconvertToPdfbutton] = useState(false);
     const [loading, setLoading] = useState(false);
+    const [width, setWidth] = useState(800);
+    const [height, setHeight] = useState(600);
+    const [dpi, setDpi] = useState(300);
+    const [maxSizeKb, setMaxSizeKb] = useState(500);
+
     const handleImageUpload = (e) => {
         const files = e.target.files[0];
         // console.log('files', e.target.files)
@@ -35,10 +40,10 @@ const ImgResizeCard = () => {
         const formData = new FormData();
 
         formData.append("image", images[0].files);
-        formData.append("width", 800); // Example width
-        formData.append("height", 600); // Example height
-        formData.append('dpi', 300); // Example DPI
-        formData.append('max_size_kb', 500); // Example max size in KB
+        formData.append("width", width); // Example width
+        formData.append("height", height); // Example height
+        formData.append('dpi', dpi); // Example DPI
+        formData.append('max_size_kb', maxSizeKb); // Example max size in KB
         // console.log("formData", formData)
 
         try {
@@ -141,6 +146,86 @@ const ImgResizeCard = () => {
                         </div>
                     ))}
                 </div>
+                 <div className='metadata_1'>
+                        <label style={{paddingRight:"10px"}}
+                           
+                        >
+                            Height
+                        </label>
+
+                        <input
+
+                            type="number"
+                            
+                            onChange={(e) => setHeight(e.target.value)}
+                            defaultValue={height}
+                            style={{  marginTop: "10px",
+                                fontSize: "25px",
+                                width:"100%",
+                                paddingBottom:"10px"
+                             }}
+                        />
+                    </div>
+                    <div className='metadata_1'>
+                        <label style={{paddingRight:"10px"}}
+                           
+                        >
+                            Width
+                        </label>
+
+                        <input
+
+                            type="number"
+                            
+                            onChange={(e) => setWidth(e.target.value)}
+                            defaultValue={width}
+                            style={{  marginTop: "10px",
+                                fontSize: "25px",
+                                width:"100%",
+                                paddingBottom:"10px"
+                             }}
+                        />
+                    </div>
+                    <div className='metadata_1'>
+                        <label style={{paddingRight:"10px"}}
+                           
+                        >
+                            DPI
+                        </label>
+
+                        <input
+
+                            type="number"
+                            
+                            onChange={(e) => setDpi(e.target.value)}
+                            defaultValue={dpi}
+                            style={{  marginTop: "10px",
+                                fontSize: "25px",
+                                width:"100%",
+                                paddingBottom:"10px"
+                             }}
+                        />
+                    </div>
+                    <div className='metadata_1'>
+                        <label style={{paddingRight:"10px"}}
+                           
+                        >
+                            Max Size (KB)
+                        </label>
+
+                        <input
+
+                            type="number"
+                            
+                            onChange={(e) => setMaxSizeKb(e.target.value)}
+                            defaultValue={maxSizeKb}
+                            style={{  marginTop: "10px",
+                                fontSize: "25px",
+                                width:"100%",
+
+                             }}
+                        />
+                    </div>
             </div>
             <div>
                 {converToPdfbutton && <div className="convertButton_imgtopdf"

@@ -3,9 +3,11 @@ import RamoveBgCard from '../Card/RemoveBgCard'
 import FooterCard from '../Card/FooterCard'
 const RemoveBg = () => {
   return (
-    <div>
-        <RamoveBgCard />
-        <FooterCard />
+    <div className='cont-footer-adjust'>
+       
+        
+        <div> <RamoveBgCard /></div>
+        <div><FooterCard /></div>
     </div>
   )
 }

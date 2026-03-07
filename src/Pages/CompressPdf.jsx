@@ -3,9 +3,12 @@ import CompressPdfCrad from '../Card/CompressPdfCrad'
 import FooterCard from '../Card/FooterCard'
 const CompressPdf = () => {
   return (
-    <div>
-        <CompressPdfCrad/>
-        <FooterCard/>
+
+    <div className="cont-footer-adjust">
+
+
+      <div><CompressPdfCrad /></div>
+      <div><FooterCard /></div>
     </div>
   )
 }

@@ -4,9 +4,11 @@ import FooterCard from '../Card/FooterCard'
 
 const ImgResize = () => {
   return (
-    <div>
-        <ImgResizeCard/>
-        <FooterCard/>
+    <div className='cont-footer-adjust'>
+       
+        
+        <div> <ImgResizeCard/></div>
+        <div><FooterCard/></div>
     </div>
   )
 }

@@ -4,9 +4,11 @@ import FooterCard from '../Card/FooterCard'
 
 const ImgToPdf = () => {
   return (
-    <div>
-        <ImgToPdfCard/>
-        <FooterCard/>
+    <div className='cont-footer-adjust'>
+        
+        
+        <div><ImgToPdfCard/></div>
+        <div><FooterCard/></div>
     </div>
   )
 }

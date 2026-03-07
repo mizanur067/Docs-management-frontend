@@ -1,11 +1,13 @@
 import React from 'react'
 import SplitPdfCard from '../Card/SplitPdfCard'
-import FooterCard from '../Card/FooterCard' 
+import FooterCard from '../Card/FooterCard'
 const SplitPdf = () => {
   return (
-    <div>
-        <SplitPdfCard />
-        <FooterCard />
+    <div className='cont-footer-adjust'>
+
+
+      <div>  <SplitPdfCard /> </div>
+      <div><FooterCard /></div>
     </div>
   )
 }
