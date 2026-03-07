@@ -81,18 +81,20 @@
 }
 
 .container_imgtopdf {
-  min-height: 100vh;
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 40px 20px;
+    /* min-height: 100vh; */
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;   /* change this */
+    padding: 40px 20px;
+    gap: 5px;
 }
 
 .content_imgtopdf {
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
+  /* border: 2px solid red; */
 }
 
 .title_imgtopdf {
@@ -249,11 +251,12 @@
 /* Preview Section */
 
 .previewContainer_imgtopdf {
-  margin-top: 50px;
+  margin-top: 5px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
   padding: 20px;
+  /* border: 2px solid red; */
 }
 
 .previewBox_imgtopdf {
@@ -287,4 +290,9 @@
   margin-left: auto;   /* This pushes it to the right */
   display: flex;
   width: fit-content;
+  /* border: 2px solid red; */
+}
+.metadata_1{
+  /* border: 2px solid red; */
+  font-size: 30px;
 }
