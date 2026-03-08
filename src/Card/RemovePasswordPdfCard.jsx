@@ -42,7 +42,7 @@ const RemovePasswordPdfCard = () => {
             
     
             try {
-                const response = await fetch("http://127.0.0.1:8000/Mizanur/remove_pdf_password/", {
+                const response = await fetch("https://lordcarson132.pythonanywhere.com/Mizanur/remove_pdf_password/", {
                     method: "POST",
                     body: formData
                 });

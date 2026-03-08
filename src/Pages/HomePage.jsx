@@ -16,12 +16,12 @@ const HomePage = () => {
             icon: "🧩",
             link: "/combine-img"
         },
-        {
-            title: "Remove Background",
-            desc: "Automatically remove background from images.",
-            icon: "✂️",
-            link: "/remove-bg"
-        },
+        // {
+        //     title: "Remove Background",
+        //     desc: "Automatically remove background from images.",
+        //     icon: "✂️",
+        //     link: "/remove-bg"
+        // },
         {
             title: "Image to PDF",
             desc: "Convert images into a PDF document.",

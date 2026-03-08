@@ -42,7 +42,7 @@ const CompressPdfCrad = () => {
         
 
         try {
-            const response = await fetch("http://127.0.0.1:8000/Mizanur/compress_pdf/", {
+            const response = await fetch("https://lordcarson132.pythonanywhere.com/Mizanur/compress_pdf/", {
                 method: "POST",
                 body: formData
             });

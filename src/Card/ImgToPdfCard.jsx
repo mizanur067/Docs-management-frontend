@@ -41,7 +41,7 @@ const ImgToPdfCard = () => {
         });
 
         try {
-            const response = await fetch("http://127.0.0.1:8000/Mizanur/imgToPdf/", {
+            const response = await fetch("https://lordcarson132.pythonanywhere.com/Mizanur/imgToPdf/", {
                 method: "POST",
                 body: formData
             });

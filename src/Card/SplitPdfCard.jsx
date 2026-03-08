@@ -31,7 +31,7 @@ const SplitPdfCard = () => {
             const formData = new FormData();
             formData.append("pdf", images[0].files);
             try{
-                const res= await fetch("http://127.0.0.1:8000/Mizanur/no_of_pages_in_pdf/", {
+                const res= await fetch("https://lordcarson132.pythonanywhere.com/Mizanur/no_of_pages_in_pdf/", {
                     method: "POST",
                     body: formData
                 })
@@ -63,7 +63,7 @@ const SplitPdfCard = () => {
             
     
             try {
-                const response = await fetch("http://127.0.0.1:8000/Mizanur/split_pdf/", {
+                const response = await fetch("https://lordcarson132.pythonanywhere.com/Mizanur/split_pdf/", {
                     method: "POST",
                     body: formData
                 });

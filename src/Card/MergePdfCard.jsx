@@ -41,7 +41,7 @@ const MergePdfCard = () => {
     });
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/Mizanur/merge_pdfs_max_size/", {
+      const response = await fetch("https://lordcarson132.pythonanywhere.com/Mizanur/merge_pdfs_max_size/", {
         method: "POST",
         body: formData
       });

@@ -47,7 +47,7 @@ const ImgResizeCard = () => {
         // console.log("formData", formData)
 
         try {
-            const response = await fetch("http://127.0.0.1:8000/Mizanur/resize_image/", {
+            const response = await fetch("https://lordcarson132.pythonanywhere.com/Mizanur/resize_image/", {
                 method: "POST",
                 body: formData
             });
