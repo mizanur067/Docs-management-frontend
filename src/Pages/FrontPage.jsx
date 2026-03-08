@@ -12,7 +12,7 @@ import RemovePasswordPdf from './RemovePasswordPdf';
 const FrontPage = () => {
   return (
     <div>
-        <Router>
+        <Router basename='Docs-management-frontend'>
             <Routes>
                 <Route path='/' element={<HomePage />} />
                 <Route path='/img-to-pdf' element={<ImgToPdf />} />
